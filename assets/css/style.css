@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(206, 214, 221);
+}
+
+
+
+.text {
+  font-size: 50px;
+  font-family: 'Anton', sans-serif;
+ 
+}
+
+.img-fluid {
+  height: 300px;
+}
+
+.hide {
+  display: none;
+}
+
+
+
+
+   
+
