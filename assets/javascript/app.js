@@ -128,9 +128,12 @@ function done() {
 
     }
 
-     else {
+    else
+    {
+      (questions[i].answer != questions[i].userAnswer) 
       
       incorrect++
+      console.log(incorrect)
 
       $("#incorrect-answers").text("Incorrect Answers: " + incorrect)
     }
