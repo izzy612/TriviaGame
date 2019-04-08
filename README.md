@@ -8,4 +8,3 @@
 
 <br> <br>
 
-https://izzy612.github.io/TriviaGame/
