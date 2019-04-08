@@ -25,12 +25,12 @@
   
 
   <hr>
-    <div class="container"></div>
+    <div class="container">
       <div class="row mx-auto">
        <div class="col-md-8 text-center mx-auto">
           <div id="start-page" class= "start-page-text">
         <h3>How knowledgeable are you about Bob's Burgers?</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde non velit aliquam quibusdam, voluptates, itaque ad mollitia harum laboriosam eius sapiente adipisci, cupiditate architecto eum impedit odio ut eligendi minus!</p>
+        <p>The Belchers are just like any normal, American family, but funnier. Are you keeping up with the Belchers?</p>
         <div class="btn btn-warning" id="start">Start Trivia</div>
          </div>
        </div>
@@ -38,20 +38,26 @@
     </div>
 
         
-        <form id="quiz-form" class="hide"></form>
+        <form id="quiz-form" class="hide text-center mx-auto"></form>
         
     
     
-        <div class="counter">
+        <div class="counter text-center mx-auto size">
           <h2></h2>
         </div>
    
 
        
-        <div class ="btn btn-warning hide" id="done">Submit</div>
+        <div class ="btn btn-warning hide text-center mx-auto" id="done">Submit<div>
+      </div>
 
 
-        <div id="correct" class=""></div>
+      <div class="hidden" id="end-page">
+        <h2>Here are your scores:</h2>
+        <p id="correct-answers"></p>
+        <p id="incorrect-answers"></p>
+        <p id="unanswered"></p>
+      </div>
 
         
 

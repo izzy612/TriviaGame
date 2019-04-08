@@ -49,7 +49,7 @@ var questions = [
 //shows their stats
 
 
-var correct 
+
 var clockRunning = false
 var timeLeft = 60
 var clock;
@@ -91,16 +91,10 @@ function runClock() {
 
 }
 
-function generateCorrectDivs() {
-  correctAnswers.forEach(item => {
-    let itemDiv = $("<div>");
 
-    itemDiv.addClass("correct-item");
-    itemDiv.html(item);
 
-    $("#correct").append(itemDiv);
-  })
-}
+
+
 
 
 
