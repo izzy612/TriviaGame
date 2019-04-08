@@ -54,6 +54,8 @@ var clockRunning = false
 var timeLeft = 60
 var clock;
 var correctAnswers = [];
+var correct
+var incorrect
 
 window.onload = function() {
   $("#done").on("click", function () {
@@ -61,6 +63,8 @@ window.onload = function() {
     done()
   });
   $("#start").on("click", start);
+  $("#end-page").addClass("hide")
+  
 };
 
 
@@ -74,6 +78,8 @@ function start() {
   }
   
   clock = setInterval(runClock, 1000);
+  $("#end-page").addClass("hide")
+  
 
 
 };
@@ -103,11 +109,14 @@ function done() {
   clearInterval(clock);
   clockRunning = false; 
 
-  // $("#correct").removeClass("hide")
+  $("#correct").removeClass("hide")
 
   $("#quiz-form").addClass("hide");
   $("#done").addClass("hide")
   $("#count").addClass("hide")
+  $("#end-page").removeClass("hide")
+  
+  
 
   for (var i = 0; i < questions.length; i++) {
     console.log(questions[i])
@@ -115,12 +124,15 @@ function done() {
 
       correct ++
       console.log(correct)
+      $("#correct-answers").text("Correct Answers: " + correct)
 
-      correctAnswers.push(i + 1)
-      console.log(correctAnswers);
+    }
+
+     else {
       
-      generateCorrectDivs();
-      
+      incorrect++
+
+      $("#incorrect-answers").text("Incorrect Answers: " + incorrect)
     }
   }
 
