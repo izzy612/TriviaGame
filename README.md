@@ -6,4 +6,6 @@
 <li>Players have a limited amount of time to answer questions and finish the game.</li>
 <li>Correct answers are displayed after each question.</li>
 
+<br> <br>
+
 https://izzy612.github.io/TriviaGame/
