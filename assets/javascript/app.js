@@ -96,7 +96,7 @@ window.onload = function() {
   });
   $('#start').on('click', start);
   
-  audio();
+  
 };
 
 function start() {
@@ -149,7 +149,13 @@ function done() {
       incorrect++;
       console.log(incorrect);
 
-      $('#incorrect-answers').text('Incorrect Answers: ' + incorrect);
+      var card = $('<div>').addClass('card');
+      $('div').addClass('custom-card');
+      var scores = $('<h5>').text(incorrect).appendTo(card);
+  
+
+      // $('#incorrect-answers').text('Incorrect Answers: ' + incorrect);
+      
       console.log(incorrect);
     }
   }
