@@ -148,16 +148,13 @@ function done() {
     } else {
       incorrect++;
       console.log(incorrect);
-
-      var card = $('<div>').addClass('card');
-      $('div').addClass('custom-card');
-      var scores = $('<h5>').text(incorrect).appendTo(card);
-  
-
-      // $('#incorrect-answers').text('Incorrect Answers: ' + incorrect);
+        
+      $('#incorrect-answers').text('Incorrect Answers: ' + incorrect);
       
       console.log(incorrect);
     }
+
+    
   }
 
   
