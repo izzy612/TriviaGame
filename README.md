@@ -8,6 +8,6 @@
 
 <br> <br>
 
-<img width="1279" alt="Screen Shot 2019-06-11 at 4 48 10 PM" src="https://user-images.githubusercontent.com/48463632/59305737-d59f8700-8c68-11e9-8e8f-1ad97738db71.png">
+<img width="1392" alt="Screen Shot 2019-06-17 at 10 03 11 PM" src="https://user-images.githubusercontent.com/48463632/59648089-be223b80-914b-11e9-9c0b-64a197c025f1.png">
 
 
