@@ -1,6 +1,8 @@
 body {
-  background-color: rgb(206, 214, 221);
+  
+
 }
+
 
 
 
@@ -18,11 +20,39 @@ body {
   display: none;
 }
 
+.image {
+  padding-top: 90%;
+  
+}
+
 .size {
   font-size: 50px;
 
 
   }
+  .background  img {
+    
+    
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    position: fixed;
+  
+
+
+   }
+
+  
+
+
+
+  .custom-card {
+    background: rgba(255,255,255,0.3)
+  }
+
 
 
    

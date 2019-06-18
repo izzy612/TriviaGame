@@ -13,6 +13,11 @@
 <body>
 
 
+  <div class="background">
+  
+  <img src="https://www.itsnicethat.com/system/files/052017/5913673f7fa44c5a7d000e58/feature_hero/Bobs_street_scene.jpg?1512501804"  alt="">
+
+</div>
     
   <div class="container">
     <div class="row">
@@ -29,39 +34,51 @@
       <div class="row mx-auto">
        <div class="col-md-8 text-center mx-auto">
           <div id="start-page" class= "start-page-text">
-        <h3>How knowledgeable are you about Bob's Burgers?</h3>
-        <p>The Belchers are just like any normal, American family, but funnier. Are you keeping up with the Belchers?</p>
-        <div class="btn btn-warning" id="start">Start Trivia</div>
+        <h3><b>How knowledgeable are you about Bob's Burgers?</h3>
+        <p>The Belchers are just like any normal, American family, but funnier. Are you keeping up with the Belchers?</b></p>
+        <a class="btn btn-warning btn-outline-danger"id="start">Start Trivia</a>
          </div>
        </div>
      </div>
     </div>
 
-        
-        <form id="quiz-form" class="hide text-center mx-auto"></form>
-        
-    
-    
-        <div class="counter text-center mx-auto size">
-          <h2></h2>
+  
+
+    <div class="container">
+        <div class="row justify-content-between p-5">
+          <div class="col-6 col-md-4 ">
+
+            <img  src="https://img.huffingtonpost.com/asset/58bec69c1500003716abda64.jpeg?ops=scalefit_720_noupscale" width="330" alt="" class="hide image">
+
+              <div class="counter text-center mx-auto size">
+                  
+                </div>
+
+          </div>
+          
+          <div class="col-12 col-md-8 hide" id="questions">
+            
+            
+              <form id="quiz-form" class=" text-end mx-auto"></form>
+              <div class ="btn btn-warning text-danger d-flex justify-content-center theme-button" id="done">Submit</div>
+          </div>
         </div>
-   
 
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 text-center mx-auto">
-        <div class ="btn btn-warning hide" id="done">Submit</div>
-          </div>
-          </div>
-          </div>
-
-
-      <div class="hide text-center" id="end-page">
-        <h2>Here are your scores:</h2>
-        <p id="correct-answers"></p>
-        <p id="incorrect-answers"></p>
         
-      </div>
+
+        <div class="hide text-center pb-5" id="end-page">
+            <h2><b>Here are your scores:</b></h2>
+            <p id="correct-answers"></p>
+            <p id="incorrect-answers"></p>
+            
+            <audio id="myAudio">
+                <source src="./assets/images/come_meet_our_family (1).mp3">
+                
+                
+              </audio>
+            
+          </div>
+       
 
         
 
@@ -70,13 +87,10 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
         <script type="text/javascript" src="assets/javascript/app.js"></script>
-
+        
       
-
-
-
-
-     
+        
+      
     
 
 

@@ -30,7 +30,7 @@ var questions = [
     userAnswer: '',
   },
   {
-    question: "What street is Bob’s Burgers on?",
+    question: 'What street is Bob’s Burgers on?',
     choices: ['Ocean Ave', 'Burger Ave', 'Pesto Ave'],
     answer: 'Ocean Ave',
     userAnswer: '',
@@ -87,8 +87,7 @@ var clockRunning = false;
 var timeLeft = 60;
 var clock;
 var correctAnswers = [];
-var correct;
-var incorrect;
+
 
 window.onload = function() {
   $('#done').on('click', function() {
@@ -96,13 +95,14 @@ window.onload = function() {
     done();
   });
   $('#start').on('click', start);
-  $('#end-page').addClass('hide');
-
+  
+  audio();
 };
 
 function start() {
-  $('#quiz-form').removeClass('hide');
-  $('#done').removeClass('hide');
+  $('#start').addClass('hide');
+  $('#questions').removeClass('hide');
+  $('.image').removeClass('hide');
 
   if ((clockRunning = false)) {
     clockRunning = true;
@@ -128,10 +128,12 @@ function done() {
   clearInterval(clock);
   clockRunning = false;
 
-  $('#correct').removeClass('hide');
+  
 
-  $('#quiz-form').addClass('hide');
-  $('#done').addClass('hide');
+  $('#correct').removeClass('hide');
+  $('.image').addClass('hide');
+  $('#questions').addClass('hide');
+  $('.counter').addClass('hide')
   $('#count').addClass('hide');
   $('#end-page').removeClass('hide');
   $("#start").addClass('hide');
@@ -141,6 +143,7 @@ function done() {
     if (questions[i].answer === questions[i].userAnswer) {
       correct++;
       console.log(correct);
+      
       $('#correct-answers').text('Correct Answers: ' + correct);
     } else {
       incorrect++;
@@ -150,9 +153,20 @@ function done() {
       console.log(incorrect);
     }
   }
+
+  
+  
+ 
 }
 var incorrect = 0;
 var correct = 0;
+
+
+function audio() {
+  var sound = new Audio('../images/come_meet_our_family (1).mp3')
+  sound.play();
+}
+
 
 // function to print all questions to page
 function renderQuestions() {
@@ -162,11 +176,13 @@ function renderQuestions() {
   // Loop through questions array
   questions.forEach(function(question, index) {
     // create div to hold question
-    var $question = $('<div>').addClass('form-group');
+    var $question = $('<div>').addClass('card');
+    $('div').addClass('custom-card');
+
     // <div class="form-group"></div>
 
     // add question to div
-    var $label = $('<h4>').text(question.question).appendTo($question);
+    var $label = $('<h5>').text(question.question).appendTo($question);
     /*
           <div class="form-group"> 
             <h4>Question 1</h4> 
