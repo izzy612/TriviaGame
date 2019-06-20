@@ -1,6 +1,8 @@
-body {
+.sticky {
   
-
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 
@@ -21,7 +23,7 @@ body {
 }
 
 .image {
-  padding-top: 90%;
+  padding-top: 18%;
   
 }
 

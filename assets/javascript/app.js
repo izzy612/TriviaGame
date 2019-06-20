@@ -129,6 +129,8 @@ function done() {
   clockRunning = false;
 
   
+  $("#my_audio").get(0).play();
+   
 
   $('#correct').removeClass('hide');
   $('.image').addClass('hide');
@@ -165,10 +167,7 @@ var incorrect = 0;
 var correct = 0;
 
 
-function audio() {
-  var sound = new Audio('../images/come_meet_our_family (1).mp3')
-  sound.play();
-}
+
 
 
 // function to print all questions to page
